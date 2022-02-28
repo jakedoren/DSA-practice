@@ -14,3 +14,18 @@ var twoSum = function (nums, target) {
   });
   return indexes;
 };
+
+//palindrome-number
+var isPalindrome = function(x) {
+    const input = Array.from(String(x), Number);
+    const reversedInputArray = []
+    for(let i = input.length - 1; i >= 0; i--) {
+        reversedInputArray.push(input[i])
+    }
+    const reversedInput = reversedInputArray.join("")
+    if(x == reversedInput) {
+        return true
+    } else {
+        return false
+    }
+};
